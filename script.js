@@ -10,11 +10,11 @@ const unitSwitch = document.getElementById("unit-switch");
 const unitLabel = document.getElementById("unit-label");
 
 // API Keys (Replace with your own API keys)
-const OPENWEATHERMAP_API_KEY = "1c86a55ad041297a64544ba7c3f2d094";
-const GEOAPIFY_API_KEY = "d8e390835b8e4110bf2f362e08f1049a";
+const OPENWEATHERMAP_API_KEY = "YOUR_OPENWEATHERMAP_API_KEY";
+const GEOAPIFY_API_KEY = "YOUR_GEOAPIFY_API_KEY";
 
 // Global Variables
-let currentUnit = "metric"; // 'metric' for Celsius, 'imperial' for Fahrenheit
+let currentUnit = "metric";
 let lastPosition = null;
 
 // Event Listeners
