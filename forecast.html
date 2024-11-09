@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>5-Day Forecast</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Search Box -->
+            <div class="search-box">
+                <button id="location" class="bx bx-map"></button>
+                <input type="text" id="city" placeholder="Enter your location" />
+                <button id="search" class="bx bx-search-alt"></button>
+            </div>
+
+            <!-- Unit Toggle Switch -->
+            <div class="unit-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="unit-switch">
+                    <span class="slider round"></span>
+                </label>
+                <span id="unit-label">°C</span>
+            </div>
+
+
+            <!-- Forecast Content -->
+            <div id="forecast"></div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="forecast-link">
+                <a href="index.html">1-Day Forecast</a>
+            </div>
+        </div>
+
+        <script src="forecast.js"></script>
+    </body>
+
+</html>

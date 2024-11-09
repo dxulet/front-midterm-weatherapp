@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Search Box -->
+            <div class="search-box">
+                <button id="location" class="bx bx-map"></button>
+                <input type="text" id="city" placeholder="Enter your location" />
+                <button id="search" class="bx bx-search-alt"></button>
+            </div>
+
+            <!-- Unit Toggle Switch -->
+            <div class="unit-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="unit-switch">
+                    <span class="slider round"></span>
+                </label>
+                <span id="unit-label">°C</span>
+            </div>
+
+
+            <!-- Weather Box -->
+            <div class="weather-box">
+                <div class="box">
+                    <div class="info-weather">
+                        <div class="weather">
+                            <img src="" alt="Weather Icon" />
+                            <p class="temperature">
+                                16<span>°C</span>
+                            </p>
+                            <p class="description">Broken Clouds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weather Details -->
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="bx bx-water"></i>
+                    <div class="text">
+                        <div class="info-humidity">
+                            <span>0%</span>
+                        </div>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="bx bx-wind"></i>
+                    <div class="text">
+                        <div class="info-wind">
+                            <span>0 km/h</span>
+                        </div>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Not Found Message -->
+            <div class="not-found">
+                <div class="box">
+                    <img src="https://static.vecteezy.com/system/resources/previews/017/172/383/original/warning-message-concept-represented-by-exclamation-mark-icon-exclamation-symbol-in-circle-png.png"
+                        alt="Location Not Found" />
+                    <p>Location Not Found</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="forecast-link">
+                <a href="forecast.html">5-Day Forecast</a>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
